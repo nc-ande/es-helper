@@ -1,10 +1,10 @@
 import { createBrowserRouter, Link } from "react-router-dom";
 import {routes} from "./routes";
-import {HomePage} from "../components/pages/HomePage";
-import {AboutPage} from "../components/pages/AboutPage";
+import {ESDemoPage} from "../components/pages/ESDemoPage";
+import {TestUsersPage} from "../components/pages/TestUsersPage";
 import {Error404Page} from "../components/pages/Error404Page";
 import {Frame} from "../components/Frame";
-import {CounterPage} from "../components/pages/CounterPage";
+import {DbSnippetsPage} from "../components/pages/DbSnippetsPage";
 
 export const router = createBrowserRouter([
     {
@@ -13,15 +13,15 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: (<HomePage/>),
+                element: (<ESDemoPage/>),
             },
             {
-                path: routes.about.pattern,
-                element: (<AboutPage/>),
+                path: routes.localUser.pattern,
+                element: (<TestUsersPage/>),
             },
             {
-                path: routes.counter.pattern,
-                element: (<CounterPage/>),
+                path: routes.dbSnippets.pattern,
+                element: (<DbSnippetsPage/>),
             }
         ]
     },

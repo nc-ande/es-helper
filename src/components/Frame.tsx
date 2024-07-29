@@ -14,9 +14,9 @@ export const Frame: React.FC = () => {
 
     return (
         <>
-            <NavLink to={routes.home.link} style={navStyles}>Home Page</NavLink>
-            <NavLink to={routes.about.link} style={navStyles}>About</NavLink>
-            <NavLink to={routes.counter.link} style={navStyles}>Counter</NavLink>
+            <NavLink to={routes.home.link} style={navStyles}>ES Demo</NavLink>
+            <NavLink to={routes.localUser.link} style={navStyles}>Test Users</NavLink>
+            <NavLink to={routes.dbSnippets.link} style={navStyles}>DB Snippets</NavLink>
             <Outlet/>
         </>
     )

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Counter1} from "./counterPage/Counter1";
 import {Counter5} from "./counterPage/Counter5";
 
-export const CounterPage: React.FC = () => {
+export const DbSnippetsPage: React.FC = () => {
     const [ state, setState ] = useState(0);
 
     const increment = (by: number) => {

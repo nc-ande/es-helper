@@ -3,13 +3,13 @@ export const routes = {
         pattern: '/',
         link: '/'
     },
-    about: {
-        pattern: 'about',
-        link: '/about'
+    localUser: {
+        pattern: 'local-user',
+        link: '/local-user'
     },
-    counter: {
-        pattern: 'counter',
-        link: '/counter'
+    dbSnippets: {
+        pattern: 'db-snippets',
+        link: '/db-snippets'
     },
     notFound: {
         pattern: '*',
