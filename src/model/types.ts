@@ -1,4 +1,3 @@
-import {ReactElement} from "react";
 import {Dayjs} from "dayjs";
 
 export type PeriodType = {
@@ -13,12 +12,7 @@ export type PeriodSelectorType = {
     setPeriod: (period: PeriodType) => void;
 };
 
-export type ListType<T> = {
-    initRow: () => T;
-    updated: (rows: T[]) => void;
-    renderRow: (row: T) => ReactElement;
-}
-
-export type UpdatableRow<T> = T & {
-    update: (row: T) => void;
-}
+export type CVRRow = {
+    cvr: string;
+    req_id: string;
+};

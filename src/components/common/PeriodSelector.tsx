@@ -1,7 +1,7 @@
 import React from "react";
 import dayjs, { Dayjs } from 'dayjs'
 import {Button, DatePicker, InputNumber} from "antd";
-import {PeriodSelectorType} from "./types";
+import {PeriodSelectorType} from "../../model/types";
 
 export const PeriodSelector: React.FC<PeriodSelectorType> = (props) => {
 

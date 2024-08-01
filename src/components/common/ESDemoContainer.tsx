@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import {PeriodSelector} from "./PeriodSelector";
-import {CVRList, CVRRow} from "./CVRList";
-import {PeriodType} from "./types";
+import {CVRList} from "./CVRList";
 import {ParagraphSelector} from "./ParagraphSelector";
 import {ParagraphType} from "../../config/paragraphs";
+import {CVRRow, PeriodType} from "../../model/types";
+import {exportXml} from "../../logic/exportXmlUtility";
 
 export type ESDemoType = {
     period: PeriodType;
@@ -20,7 +21,7 @@ export const ESDemoContainer: React.FC = () => {
             <PeriodSelector period={period} setPeriod={setPeriod}/><br/>
             <ParagraphSelector paragraph={paragraph} setParagraph={setParagraph}/>
 
-            <CVRList dataChanged={setCvrRows}/
+            <CVRList dataChanged={setCvrRows} exportXML={(row) => exportXml('sel111', row, period)}/>
         </>
     )
 }
