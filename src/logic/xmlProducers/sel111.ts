@@ -14,11 +14,11 @@ H:\\SKAT - CSC fællesserver\\Projekter\\Erhvervsprojektet\\Forvaltning\\Produkt
 \t<FileStatementCreate>
 \t\t<CompanyCode>1</CompanyCode>
 \t\t<CVRNumber>${row.cvr}</CVRNumber>
-\t\t<DocReceptionDate>${period.start}</DocReceptionDate>
+\t\t<DocReceptionDate>${period.start?.format('yyyy-mm-dd')}</DocReceptionDate>
 \t</FileStatementCreate>
 \t<CompanyCreate>
 \t\t<DataSupplier>2</DataSupplier>
-\t\t<CompanyStartDate>${period.start}</CompanyStartDate>
+\t\t<CompanyStartDate>${period.start?.format('yyyy-mm-dd')}</CompanyStartDate>
 \t\t<OperationModeCreate>
 \t\t\t<OperationModeCode>009</OperationModeCode>
 \t\t</OperationModeCreate>
