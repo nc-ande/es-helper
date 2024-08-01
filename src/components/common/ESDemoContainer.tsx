@@ -21,7 +21,7 @@ export const ESDemoContainer: React.FC = () => {
             <PeriodSelector period={period} setPeriod={setPeriod}/><br/>
             <ParagraphSelector paragraph={paragraph} setParagraph={setParagraph}/>
 
-            <CVRList dataChanged={setCvrRows} exportXML={(row) => exportXml('sel111', row, period)}/>
+            <CVRList dataChanged={setCvrRows} exportXML={(row) => exportXml(paragraph!, row, period)}/>
         </>
     )
 }

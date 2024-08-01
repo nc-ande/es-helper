@@ -6,6 +6,7 @@ import {producer as fond111} from "./xmlProducers/fond111";
 import {producer as fond112} from "./xmlProducers/fond112";
 import {producer as asc113} from "./xmlProducers/asc113";
 import {producer as asc116} from "./xmlProducers/asc116";
+import {downloadXMLFile} from "./downloadFile";
 
 export type ParagraphXmlProducerType = (row: CVRRow, period: PeriodType) => string;
 
@@ -20,5 +21,5 @@ const providers: Record<ParagraphType, ParagraphXmlProducerType> = {
 
 export const exportXml = (paragraph: ParagraphType, row: CVRRow, period: PeriodType) => {
     const xml = providers[paragraph](row, period);
-
+    downloadXMLFile(xml, paragraph);
 }

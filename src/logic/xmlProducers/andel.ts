@@ -17,12 +17,12 @@ H:\\SKAT - CSC fællesserver\\Projekter\\Erhvervsprojektet\\Forvaltning\\Produkt
 \t\t<!-- UDFYLDES -->
 \t\t<CVRNumber>${row.cvr}</CVRNumber>
 \t\t<!-- UDFYLDES -->
-\t\t<DocReceptionDate>${period.start?.format('yyyy-mm-dd')}</DocReceptionDate>
+\t\t<DocReceptionDate>${period.start?.format('YYYY-MM-DD')}</DocReceptionDate>
 \t</FileStatementCreate>
 \t<CompanyCreate>
 \t\t<DataSupplier>2</DataSupplier>
 \t\t<!-- UDFYLDES -->
-\t\t<CompanyStartDate>${period.start?.format('yyyy-mm-dd')}</CompanyStartDate>
+\t\t<CompanyStartDate>${period.start?.format('YYYY-MM-DD')}</CompanyStartDate>
 \t\t<OperationModeCreate>
 \t\t\t<OperationModeCode>017</OperationModeCode>
 \t\t</OperationModeCreate>
@@ -37,9 +37,9 @@ H:\\SKAT - CSC fællesserver\\Projekter\\Erhvervsprojektet\\Forvaltning\\Produkt
 \t\t</RegistrationStatusCreate>
 \t\t<AccountingPeriod>
 \t\t\t<!-- UDFYLDES -->
-\t\t\t<AccountingPeriodStartDate>${period.start?.format('yyyy-mm-dd')}</AccountingPeriodStartDate>
+\t\t\t<AccountingPeriodStartDate>${period.start?.format('YYYY-MM-DD')}</AccountingPeriodStartDate>
 \t\t\t<!-- UDFYLDES -->
-\t\t\t<AccountingPeriodEndDate>${period.end?.format('yyyy-mm-dd')}</AccountingPeriodEndDate>
+\t\t\t<AccountingPeriodEndDate>${period.end?.format('YYYY-MM-DD')}</AccountingPeriodEndDate>
 \t\t</AccountingPeriod>
 \t\t<ActivityCreate>
 \t\t\t<ActivityCode>1</ActivityCode>
@@ -61,7 +61,7 @@ H:\\SKAT - CSC fællesserver\\Projekter\\Erhvervsprojektet\\Forvaltning\\Produkt
 \t\t\t\t<ObligationCode>067</ObligationCode>
 \t\t\t\t<ObligationTypeCode>3</ObligationTypeCode>
 \t\t\t\t<!-- UDFYLDES -->
-\t\t\t\t<RegArrangementsStartDate>${period.start?.format('yyyy-mm-dd')}</RegArrangementsStartDate>
+\t\t\t\t<RegArrangementsStartDate>${period.start?.format('YYYY-MM-DD')}</RegArrangementsStartDate>
 \t\t\t\t<TaxationRuleCode>04</TaxationRuleCode>
 \t\t\t\t<RegistrationSpecFrequencyCode>10</RegistrationSpecFrequencyCode>
 \t\t\t\t<RegistrationSpecMediaCode>2</RegistrationSpecMediaCode>
