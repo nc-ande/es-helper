@@ -5,7 +5,7 @@ import {CVRList} from "./CVRList";
 export const ESDemoContainer: React.FC = () => {
     return (
         <>
-            <PeriodSelector update={(start, end) => {}}/>
+            <PeriodSelector updated={(start, end) => {}}/>
             <CVRList dataChanged={items => {}}/>
         </>
     )
