@@ -1,7 +1,16 @@
 import {ReactElement} from "react";
+import {Dayjs} from "dayjs";
+
+export type PeriodType = {
+    start?: Dayjs;
+    end?: Dayjs;
+    year?: number;
+}
 
 export type PeriodSelectorType = {
-    updated: (start: Date, end: Date) => void;
+    period: PeriodType;
+    withYear?: boolean;
+    setPeriod: (period: PeriodType) => void;
 };
 
 export type ListType<T> = {

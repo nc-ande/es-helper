@@ -1,12 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import {PeriodSelector} from "./PeriodSelector";
-import {CVRList} from "./CVRList";
+import {CVRList, CVRRow} from "./CVRList";
+import {PeriodType} from "./types";
+
+export type ESDemoType = {
+    period: PeriodType;
+    rows: CVRRow[];
+}
 
 export const ESDemoContainer: React.FC = () => {
+    const [period, setPeriod] = useState<PeriodType>({});
+    const [, setCvrRows] = useState<CVRRow[]>([]);
+
     return (
         <>
-            <PeriodSelector updated={(start, end) => {}}/>
-            <CVRList dataChanged={items => {}}/>
+            <PeriodSelector period={period} setPeriod={setPeriod}/>
+            <CVRList dataChanged={setCvrRows}/>
         </>
     )
 }
