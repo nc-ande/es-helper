@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, DatePicker} from "antd";
-import {PeriodSelectorType} from "./index";
+import {PeriodSelectorType} from "./types";
 
 export const PeriodSelector: React.FC<PeriodSelectorType> = (props) => {
     return (
