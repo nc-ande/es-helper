@@ -1,3 +1,5 @@
+export type ParagraphType = keyof typeof Paragraphs;
+
 export const Paragraphs = {
     'sel111': 'Selskab §1.1.1',
     'andel': 'Andelsforening',
