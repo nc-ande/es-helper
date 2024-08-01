@@ -15,7 +15,8 @@ export const ESDemoContainer: React.FC = () => {
     return (
         <>
             <PeriodSelector period={period} setPeriod={setPeriod}/>
-            <CVRList dataChanged={setCvrRows}/>
+
+            <CVRList dataChanged={setCvrRows}/
         </>
     )
 }

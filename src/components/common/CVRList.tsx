@@ -9,6 +9,7 @@ export type CVRRow = {
 
 export type CVRListType = {
     dataChanged: (items: CVRRow[]) => void;
+    exportXML: (item: CVRRow) => void;
 };
 
 export const CVRList: React.FC<CVRListType> = (props) => {
@@ -32,6 +33,10 @@ export const CVRList: React.FC<CVRListType> = (props) => {
             newItems.splice(index, 1);
             return newItems;
         })
+    }
+
+    const exportXML = (row: CVRRow) => {
+
     }
 
     return (
