@@ -16,3 +16,5 @@ export const routes = {
         link: '/404'
     }
 }
+
+export const basename = '/es-helper';

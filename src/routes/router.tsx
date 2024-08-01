@@ -1,5 +1,5 @@
 import { createBrowserRouter, Link } from "react-router-dom";
-import {routes} from "./routes";
+import {basename, routes} from "./routes";
 import {ESDemoPage} from "../components/pages/ESDemoPage";
 import {TestUsersPage} from "../components/pages/TestUsersPage";
 import {Error404Page} from "../components/pages/Error404Page";
@@ -29,4 +29,4 @@ export const router = createBrowserRouter([
         path: routes.notFound.pattern,
         element: (<Error404Page/>)
     }
-]);
+], { basename: basename });
