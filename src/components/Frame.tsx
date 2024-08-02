@@ -46,6 +46,7 @@ export const Frame: React.FC = () => {
                         background: colorBgContainer,
                         minHeight: 280,
                         padding: 24,
+                        marginTop: 48,
                         borderRadius: borderRadiusLG,
                     }}
                 >
