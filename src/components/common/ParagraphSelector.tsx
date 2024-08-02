@@ -15,7 +15,7 @@ export const ParagraphSelector: React.FC<ParagraphSelectorProps> = (props) => {
 
     return (
         <>
-            <Select value={props.paragraph} onChange={handleChange}>
+            <Select placeholder={'Select paragraph'} value={props.paragraph} onChange={handleChange}>
                 {Object.entries(Paragraphs).map(([key, value]) => (
                     <Select.Option key={key} value={key}>{value}</Select.Option>
                 ))}
